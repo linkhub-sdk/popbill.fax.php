@@ -16,7 +16,6 @@
 * We welcome any suggestions, feedbacks, blames or anything.
 * ======================================================================================
 */
-namespace Popbill;
 require_once 'Popbill/popbill.php';
 
 class FaxService extends PopbillBase {

@@ -1,8 +1,6 @@
 <?php
 
 require_once 'PopbillFax.php';
-use Popbill\PopbillException;
-use Popbill\FaxService;
 
 $PartnerID = 'TESTER';
 $SecretKey = 'okH3G1/WZ3w1PMjHDLaWdcWIa/dbTX3eGuqMZ5AvnDE=';
