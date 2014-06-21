@@ -67,4 +67,13 @@ catch(PopbillException $pe) {
 }
 echo chr(10);
 
+try {
+	$result = $FaxService->GetURL('1231212312','userid','BOX');
+	echo $result;
+}
+catch(PopbillException $pe) {
+	echo $pe->getMessage();
+}
+echo chr(10);
+
 ?>

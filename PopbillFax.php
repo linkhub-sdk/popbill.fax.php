@@ -93,5 +93,15 @@ class FaxService extends PopbillBase {
     	}
     	return $this->executeCURL('/FAX/'.$ReceiptNum.'/Cancel', $CorpNum,$UserID);
     }
+    
+   /* 팩스 관련 기능 URL 확인
+    *	$CorpNum => 발송사업자번호
+    *	$UserID	=> 팝빌 회원아이디
+    *	$TOGO => URL 위치 아이디
+    */
+    public function GetURL($CorpNum ,$UserID, $TOGO) {
+    	$response = $this->executeCURL('/FAX/?TG='.$TOGO,$CorpNum,$UserID);
+    	return $response->url;
+    }
 }
 ?>
