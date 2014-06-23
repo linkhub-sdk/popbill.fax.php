@@ -20,8 +20,8 @@ require_once 'Popbill/popbill.php';
 
 class FaxService extends PopbillBase {
 	
-	public function __construct($PartnerID,$SecretKey) {
-    	parent::__construct($PartnerID,$SecretKey);
+	public function __construct($LinkID,$SecretKey) {
+    	parent::__construct($LinkID,$SecretKey);
     	$this->AddScope('160');
     }
     

@@ -2,11 +2,11 @@
 
 require_once 'PopbillFax.php';
 
-$PartnerID = 'TESTER';
+$LinkID = 'TESTER';
 $SecretKey = 'okH3G1/WZ3w1PMjHDLaWdcWIa/dbTX3eGuqMZ5AvnDE=';
 
 
-$FaxService = new FaxService($PartnerID,$SecretKey);
+$FaxService = new FaxService($LinkID,$SecretKey);
 
 $FaxService->IsTest(true);
 
